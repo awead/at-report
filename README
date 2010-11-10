@@ -1,0 +1,8 @@
+== Reporting Application for Archivist's Toolkit
+
+Very simple reporting application for connecting to an existing MySQL database that is running Archivist's Toolkit, and executing pre-defined reports.
+
+== Setup
+
+Edit config/initializers/at_connect.rb as needed.  I recommend using a different MySQL username than for your standard AT application
+and giving that user only SELECT privileges.
