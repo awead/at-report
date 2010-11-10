@@ -1,0 +1,13 @@
+.DS_Store
+nohup.out
+
+*.sqlite3
+*.log
+*~
+*.swp
+
+log/*
+
+tmp/**/*
+tmp/performance 
+

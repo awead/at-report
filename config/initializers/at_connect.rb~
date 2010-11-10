@@ -1,7 +1,0 @@
-  ActiveRecord::Base.establish_connection(
-    :adapter =>  'mysql',
-    :database => 'atk',
-    :host=>      'boogie.rockhall.org',
-    :username => 'atkreporter',
-    :password => 'password'
-  )
