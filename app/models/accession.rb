@@ -4,7 +4,7 @@ class Accession < ActiveRecord::Base
   set_table_name 'Accessions'
   
   def self.agreements
-      connection.execute("SELECT title as 'Title', agreementSent as 'Sent', agreementSentDate as 'Date Sent', agreementReceived as 'Received', agreementReceivedDate as 'Date Received' FROM Accessions WHERE agreementReceived is NULL")
+      connection.execute("SELECT DISTINCT title as 'Title', agreementSent as 'Sent', agreementSentDate as 'Date Sent', agreementReceived as 'Received', agreementReceivedDate as 'Date Received' FROM Accessions WHERE agreementReceived is NULL AND resourceType != 'Gift of' ORDER BY title")
   end
 
 end
