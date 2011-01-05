@@ -1,3 +1,9 @@
+<% if ENV["RAILS_ENV"] == "development" %>
+<p> SQL: </p>
+<%= @sql %>
+<% end %>
+
+
 <table border=2>
 <tr>
 <% @results.fetch_fields.each do |f| %>
@@ -5,6 +11,6 @@
 <% end %>
 <tr>
 <% @results.each do |r| %>
-<tr><td><%= r.join("</td><td>") %></td></tr>
+  <tr><td><%= r.join("</td><td>") %></td></tr>
 <% end %>
 </table> 

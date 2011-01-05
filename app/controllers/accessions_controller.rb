@@ -4,7 +4,9 @@ class AccessionsController < ApplicationController
   end
   
   def agreements
-    @results = Accession.agreements
+    a = Accession.new
+    @sql = a.get_query
+    @results = a.agreements
     
   end
 
