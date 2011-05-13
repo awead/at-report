@@ -20,6 +20,9 @@ class Accession < ActiveRecord::Base
     sql <<   "FROM Accessions "
     sql <<   "WHERE agreementReceived is NULL "
     sql <<   "AND acquisitionType != 'Unknown' "
+    sql <<   "AND acquisitionType != 'Purchase' "
+    sql <<   "AND acquisitionType != 'Transfer' "
+    sql <<   "AND acquisitionType != 'Pre-L&A' "
     sql <<   "AND resourceType != 'Gift of' "
     sql <<   "ORDER BY title"
   end
