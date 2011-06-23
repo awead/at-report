@@ -1,13 +1,4 @@
-.DS_Store
-nohup.out
-
-*.sqlite3
-*.log
-*~
-*.swp
-
-log/*
-
-tmp/**/*
-tmp/performance 
-
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/
