@@ -1,0 +1,168 @@
+
+
+Processing AccessionsController#agreements (for 192.168.251.104 at 2011-05-13 16:38:32) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 85ms (View: 3, DB: 9) | 200 OK [http://george/at-report/agreements]
+
+
+Processing AccessionsController#index (for 192.168.251.104 at 2011-05-13 16:48:57) [GET]
+Rendering template within layouts/application
+Rendering accessions/index
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://george/at-report]
+
+
+Processing AccessionsController#index (for 192.168.251.104 at 2011-05-13 16:49:27) [GET]
+Rendering template within layouts/application
+Rendering accessions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://george.rockhall.org/at-report]
+
+
+Processing AccessionsController#index (for 192.168.251.106 at 2011-05-13 16:49:36) [GET]
+Rendering template within layouts/application
+Rendering accessions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://george/at-report]
+
+
+Processing AccessionsController#agreements (for 192.168.251.106 at 2011-05-13 16:49:40) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 76ms (View: 2, DB: 6) | 200 OK [http://george/at-report/agreements]
+
+
+Processing AccessionsController#index (for 192.168.251.106 at 2011-05-13 16:50:08) [GET]
+Rendering template within layouts/application
+Rendering accessions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://george/at-report]
+
+
+Processing AccessionsController#index (for 192.168.251.106 at 2011-05-13 16:50:18) [GET]
+Rendering template within layouts/application
+Rendering accessions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://george/at-report]
+
+
+Processing AccessionsController#agreements (for 192.168.251.106 at 2011-05-13 16:50:19) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 4ms (View: 2, DB: 2) | 200 OK [http://george/at-report/agreements]
+
+
+Processing AccessionsController#index (for 192.168.251.106 at 2011-05-13 16:51:42) [GET]
+Rendering template within layouts/application
+Rendering accessions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://george.rockhall.org/at-report]
+
+
+Processing AccessionsController#agreements (for 192.168.251.106 at 2011-05-13 16:54:16) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 4ms (View: 2, DB: 2) | 200 OK [http://george.rockhall.org/at-report/agreements]
+
+
+Processing AccessionsController#agreements (for 192.168.251.106 at 2011-05-13 16:58:11) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 7ms (View: 2, DB: 4) | 200 OK [http://george.rockhall.org/at-report/agreements]
+
+
+Processing AccessionsController#agreements (for 192.168.251.106 at 2011-05-13 17:00:23) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 6ms (View: 2, DB: 4) | 200 OK [http://george.rockhall.org/at-report/agreements]
+
+
+Processing AccessionsController#agreements (for 192.168.251.106 at 2011-05-13 17:01:48) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 6ms (View: 2, DB: 4) | 200 OK [http://george.rockhall.org/at-report/agreements]
+
+
+Processing AccessionsController#agreements (for 192.168.251.106 at 2011-05-13 17:03:36) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 6ms (View: 2, DB: 4) | 200 OK [http://george.rockhall.org/at-report/agreements]
+
+
+Processing AccessionsController#agreements (for 192.168.251.106 at 2011-05-13 17:04:23) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 7ms (View: 2, DB: 4) | 200 OK [http://george.rockhall.org/at-report/agreements]
+
+
+Processing AccessionsController#agreements (for 192.168.251.106 at 2011-05-13 17:10:42) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 7ms (View: 2, DB: 4) | 200 OK [http://george.rockhall.org/at-report/agreements]
+
+
+Processing AccessionsController#agreements (for 192.168.251.106 at 2011-05-13 17:11:39) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 4ms (View: 2, DB: 2) | 200 OK [http://george.rockhall.org/at-report/agreements]
+
+
+Processing AccessionsController#agreements (for 192.168.251.106 at 2011-05-13 17:18:39) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 84ms (View: 3, DB: 12) | 200 OK [http://george.rockhall.org/at-report/agreements]
+
+
+Processing AccessionsController#agreements (for 192.168.251.106 at 2011-05-13 17:18:40) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 4ms (View: 2, DB: 2) | 200 OK [http://george.rockhall.org/at-report/agreements]
+
+
+Processing AccessionsController#agreements (for 192.168.251.106 at 2011-05-13 17:18:40) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 4ms (View: 2, DB: 2) | 200 OK [http://george.rockhall.org/at-report/agreements]
+
+
+Processing AccessionsController#agreements (for 192.168.251.106 at 2011-05-13 17:23:59) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 6ms (View: 2, DB: 4) | 200 OK [http://george.rockhall.org/at-report/agreements]
+
+
+Processing AccessionsController#agreements (for 192.168.251.108 at 2011-05-13 17:29:19) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 4ms (View: 2, DB: 2) | 200 OK [http://george.rockhall.org/at-report/agreements]
+
+
+Processing AccessionsController#agreements (for 192.168.251.108 at 2011-05-13 17:49:36) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 88ms (View: 3, DB: 6) | 200 OK [http://george.rockhall.org/at-report/agreements]
+
+
+Processing AccessionsController#agreements (for 192.168.251.108 at 2011-05-17 13:57:06) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 112ms (View: 3, DB: 8) | 200 OK [http://george.rockhall.org/at-report/agreements]
+
+
+Processing AccessionsController#agreements (for 192.168.251.117 at 2011-05-26 09:26:28) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 120ms (View: 3, DB: 9) | 200 OK [http://george.rockhall.org/at-report/agreements]
+
+
+Processing AccessionsController#agreements (for 192.168.251.108 at 2011-05-26 14:28:33) [GET]
+Rendering template within layouts/application
+Rendering accessions/agreements
+Completed in 104ms (View: 3, DB: 11) | 200 OK [http://george.rockhall.org/at-report/agreements]
+
+
+Processing AccessionsController#index (for 192.168.251.104 at 2011-05-31 10:55:39) [GET]
+Rendering template within layouts/application
+Rendering accessions/index
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://george/at-report]
+
+
+Processing AccessionsController#index (for 192.168.251.106 at 2011-05-31 11:00:58) [GET]
+Rendering template within layouts/application
+Rendering accessions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://george/at-report]
