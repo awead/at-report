@@ -5,9 +5,17 @@ that is running Archivist's Toolkit, and executing pre-defined reports.
 
 == Setup
 
-Edit config/initializers/at_connect.rb as needed.  I recommend using a different
-MySQL username than for your standard AT application and giving that user only
-SELECT privileges.
+Create the file config/initializers/at_connect.rb
+
+Enter contents below, with your database, host. etc.
+
+ActiveRecord::Base.establish_connection(
+  :adapter  => 'mysql',
+  :database => '',
+  :host     => '',
+  :username => '',
+  :password => ''
+)
 
 
 
