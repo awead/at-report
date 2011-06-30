@@ -51,8 +51,9 @@ AtReport::Application.routes.draw do
   # root :to => "welcome#index"
 
   root :to => "accessions#index"
-  resources :accessions
+  #resources :accessions
   #agreements 'agreements', :controller => 'accessions', :action => 'agreements'
+  match 'agreements', :to => 'accessions#agreements'
 
   # See how all your routes lay out with "rake routes"
 
