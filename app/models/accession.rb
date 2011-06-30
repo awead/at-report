@@ -7,6 +7,12 @@ class Accession < ActiveRecord::Base
     sql = get_query  
     connection.execute(sql)
   end
+
+  def inventory(query)
+    sql = "SELECT DISTINCT title, acquisitionType, resourceType, inventory FROM Accessions WHERE inventory like '%#{query}%'"
+    connection.execute(sql)
+  end
+    
   
   def get_query
     sql =   "SELECT DISTINCT title as 'Title', acquisitionType as 'Acquisition Type', resourceType as 'Resource Type', "
@@ -27,5 +33,4 @@ class Accession < ActiveRecord::Base
     sql <<   "ORDER BY title"
   end
   
-
 end

@@ -11,6 +11,7 @@ Enter contents below, with your database, host. etc.
 
 ActiveRecord::Base.establish_connection(
   :adapter  => 'mysql',
+  :encoding => 'utf8',
   :database => '',
   :host     => '',
   :username => '',

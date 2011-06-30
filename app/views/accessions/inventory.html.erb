@@ -1,0 +1,14 @@
+<table border=2>
+<tr>
+<% @results.fetch_fields.each do |f| %>
+  <th><%= f.name %></th>
+<% end %>
+<tr>
+<% @results.each do |r| %>
+  <tr>
+  <% r.each do |t| %>
+    <td><%= t.gsub!(/$/, "<br/>").html_safe %></td>
+  <% end %>
+  </tr>
+<% end %>
+</table>
