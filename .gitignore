@@ -5,3 +5,4 @@ tmp/
 Gemfile.lock
 config/initializers/at_connect.rb
 *~
+.rvmrc
