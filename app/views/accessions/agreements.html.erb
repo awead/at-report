@@ -1,16 +1,18 @@
-<% if ENV["RAILS_ENV"] == "development" %>
-<p> SQL: </p>
-<%= @sql %>
-<% end %>
-
-
-<table border=2>
-<tr>
-<% @results.fetch_fields.each do |f| %>
-  <th><%= f.name %></th>
-<% end %>
-<tr>
-<% @results.each do |r| %>
-  <tr><td><%= r.join("</td><td>").html_safe %></td></tr>
-<% end %>
+<table class="table table-striped table-condensed">
+  <tr>
+    <th class="nowrap">Title</th>
+    <th class="nowrap">Aquisition Type</th>
+    <th class="nowrap">Resource Type</th>
+    <th class="nowrap">Date Sent</th>
+    <th class="nowrap">Sent?</th>
+  </tr>
+  <% @results.each do |a| %>
+    <tr>
+      <td><%= a.title %></td>
+      <td><%= a.acquisitionType %></td>
+      <td><%= a.resourceType %></td>
+      <td class="nowrap"><%= a.agreementSentDate %></td>
+      <td><%= render_agreement_sent a.agreementSent %></td>
+    </tr>
+  <% end %>
 </table> 
