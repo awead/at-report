@@ -1,7 +1,8 @@
+<%= content_tag :h3, "Available Reports" %>
 
-<h3>Search Inventory</h3>
-<%= form_tag(inventory_path) do -%>
-  <div><%= search_field_tag("q") %></div>  
-  <div><%= submit_tag 'Search' %></div>
-<% end -%>
-
+<%= content_tag :dl do %>
+  <%= content_tag :dt, "Agreements" %>
+  <%= content_tag :dd, "Report on sent agreements" %>
+    <%= content_tag :dt, "Inventory Search" %>
+  <%= content_tag :dd, "Search inventory using form at top-right" %>
+<% end %>
