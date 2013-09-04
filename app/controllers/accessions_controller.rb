@@ -8,7 +8,7 @@ class AccessionsController < ApplicationController
   end
 
   def inventory
-    Accession.where("inventory LIKE ?", params[:q])
+    @results = Accession.where("inventory LIKE ?", params[:q]).distinct
   end
 
 end

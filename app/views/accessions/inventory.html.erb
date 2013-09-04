@@ -2,7 +2,7 @@
   You searched for <%= content_tag :em, params[:q] %> 
 <% end %>
 
-<% if @results.nil? %>
+<% if @results.empty? %>
  <%= content_tag :h4, "No results" %>
 <% else %>
   <table class="table table-striped table-condensed">
@@ -12,9 +12,11 @@
       <th>Resource Type</th>
     </tr>
     <% @results.each do |r| %>
-      <%= r.title  %>
-      <%= r.acquisitionType %>
-      <%= r.resourceType %>
+      <tr>
+        <td><%= r.title  %></td>
+        <td><%= r.acquisitionType %></td>
+        <td><%= r.resourceType %></td>
+      </tr>
     <% end %>
   </table>
 <% end %>
