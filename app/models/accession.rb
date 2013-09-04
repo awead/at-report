@@ -1,19 +1,32 @@
 class Accession < ActiveRecord::Base
 
-  set_primary_key 'accessionId'
-  set_table_name 'Accessions'
+  AGREEMENT_PARAMETERS = [
+    "agreementReceived is NULL ",
+    "acquisitionType != 'Unknown'",
+    "acquisitionType != 'Purchase'",
+    "acquisitionType != 'Transfer'",
+    "acquisitionType != 'Pre-L&A'",
+    "resourceType != 'Gift of'"
+  ]
   
-  def agreements
-    sql = get_query  
-    connection.execute(sql)
+  def self.table_name
+    "Accessions"
+  end
+
+  def self.primary_key
+    "accessionId"
+  end
+
+  def self.agreements
+    Accession.where(AGREEMENT_PARAMETERS.join(" AND "))
   end
 
   def inventory(query)
     sql = "SELECT DISTINCT title, acquisitionType, resourceType, inventory FROM Accessions WHERE inventory like '%#{query}%'"
     connection.execute(sql)
   end
-    
   
+  # deprecated
   def get_query
     sql =   "SELECT DISTINCT title as 'Title', acquisitionType as 'Acquisition Type', resourceType as 'Resource Type', "
     sql <<   "agreementSentDate as 'Date Sent', "
@@ -32,5 +45,6 @@ class Accession < ActiveRecord::Base
     sql <<   "AND resourceType != 'Gift of' "
     sql <<   "ORDER BY title"
   end
-  
+
+
 end
