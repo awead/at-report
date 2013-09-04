@@ -14,11 +14,11 @@
         <ul class="nav">
           <li><%= link_to "Agreements", agreements_path %></li>
         </ul>
-        <%= form_tag inventory_path, :class => "navbar-form pull-right" do %>
+        <%= form_tag inventory_path, :method => "get", :class => "navbar-form pull-right" do %>
           <%= search_field_tag "q", nil, :placeholder => "Search inventory ..." %>
           <%= submit_tag "Search" %></div>
         <% end %>
-      </div>   
+      </div>
     </div>
   </div>
 

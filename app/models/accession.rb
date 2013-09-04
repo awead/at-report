@@ -21,7 +21,8 @@ class Accession < ActiveRecord::Base
     Accession.where(AGREEMENT_PARAMETERS.join(" AND "))
   end
 
-  def inventory(query)
+  # deprecated
+  def inventory
     sql = "SELECT DISTINCT title, acquisitionType, resourceType, inventory FROM Accessions WHERE inventory like '%#{query}%'"
     connection.execute(sql)
   end

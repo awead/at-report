@@ -16,4 +16,11 @@ describe AccessionsController do
     end
   end
 
+  describe "#inventory" do
+    it "should search for an item in the inventory" do
+      get :inventory, :q => "foo"
+      assert_response :success
+    end
+  end
+
 end

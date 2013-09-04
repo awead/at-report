@@ -8,13 +8,7 @@ class AccessionsController < ApplicationController
   end
 
   def inventory
-    a = Accession.new
-    if params[:q]
-      #@sql = a.search_inventory(params[:q])
-      @results = a.inventory(params[:q])
-    else
-      @results = nil
-    end
+    Accession.where("inventory LIKE ?", params[:q])
   end
 
 end
