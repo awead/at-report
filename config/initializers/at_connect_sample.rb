@@ -2,7 +2,7 @@
 #
 # We override ActiveRecord to connect to our AT Database
 #ActiveRecord::Base.establish_connection(
-#  :adapter  => 'mysql',
+#  :adapter  => 'mysql2',
 #  :encoding => 'utf8',
 #  :database => 'at_dbase_name',
 #  :host     => 'host.example.com',
