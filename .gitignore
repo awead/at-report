@@ -17,3 +17,6 @@ tmp
 
 # Ignore our databse connection file
 at_connect.rb
+
+# Ignore precompiled assets
+public/assets
