@@ -1,5 +1,7 @@
+<% count = 1 %>
 <table class="table table-striped table-condensed">
   <tr>
+    <th>#</th>
     <th class="nowrap">Title</th>
     <th class="nowrap">Aquisition Type</th>
     <th class="nowrap">Resource Type</th>
@@ -8,11 +10,13 @@
   </tr>
   <% @results.each do |a| %>
     <tr>
+      <td><%= content_tag :strong, count.to_s %></td>
       <td><%= a.title %></td>
       <td><%= a.acquisitionType %></td>
       <td><%= a.resourceType %></td>
       <td class="nowrap"><%= a.agreementSentDate %></td>
       <td><%= render_agreement_sent a.agreementSent %></td>
     </tr>
+    <% count = count + 1 %>
   <% end %>
 </table> 
