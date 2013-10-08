@@ -26,6 +26,8 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.0)
+    artk (0.0.1)
+      rails (~> 4.0.0)
     atomic (1.1.13)
     bootstrap-sass (2.3.2.2)
       sass (~> 3.2)
@@ -121,6 +123,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  artk
   bootstrap-sass
   coffee-rails (~> 4.0.0)
   jquery-rails

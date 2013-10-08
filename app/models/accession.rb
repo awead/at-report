@@ -1,4 +1,4 @@
-class Accession < ActiveRecord::Base
+class Accession < Artk::Accession
 
   AGREEMENT_PARAMETERS = [
     "agreementReceived is NULL ",
@@ -8,14 +8,6 @@ class Accession < ActiveRecord::Base
     "acquisitionType != 'Pre-L&A'",
     "resourceType != 'Gift of'"
   ]
-  
-  def self.table_name
-    "Accessions"
-  end
-
-  def self.primary_key
-    "accessionId"
-  end
 
   def self.agreements
     Accession.where(AGREEMENT_PARAMETERS.join(" AND "))

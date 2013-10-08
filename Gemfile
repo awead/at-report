@@ -9,6 +9,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'mysql2'
 gem 'therubyracer'
+gem 'artk'
 
 group :development, :test do
   gem 'rspec'
