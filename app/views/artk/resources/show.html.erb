@@ -1,0 +1,9 @@
+<%= content_tag :h1, params[:id] %>
+<%= link_to("View components", resource_components_path(params[:id])) %>
+<%= content_tag :h3, "Resource Detail" %>
+<%= content_tag :dl, :class => "dl-horizontal" do %>
+  <% @results.attributes.each do |a| %>
+    <%= content_tag :dt, a[0].underscore.gsub(/_/," ").titleize %>
+    <%= content_tag :dd, a[1] %>
+  <% end %>
+<% end %>

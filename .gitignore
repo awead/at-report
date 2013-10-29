@@ -20,3 +20,6 @@ at_connect.rb
 
 # Ignore precompiled assets
 public/assets
+
+# Specify our own ruby version
+.ruby-version
