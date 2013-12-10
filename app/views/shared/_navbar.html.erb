@@ -1,0 +1,25 @@
+<%= content_tag :nav, :class => "navbar navbar-default", :role => "navigation" do %>
+  <%= content_tag :div, :class => "navbar-header" do %>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#atr-navbar">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <%= link_to "Archivist's Toolkit Reports", main_app.root_path, :class => "navbar-brand" %>
+  <% end %>
+
+  <%= content_tag :div, :class => "collapse navbar-collapse", :id => "atr-navbar" do %>
+    <%= content_tag :ul, :class => "nav navbar-nav" do %>
+      <%= content_tag :li, link_to("Agreements", main_app.agreements_path) %>
+      <%= content_tag :li, link_to("Finding Aids", artk.resources_path) %>
+    <% end %>
+
+    <%= form_tag main_app.inventory_path, :method => "get", :class => "navbar-form navbar-left", :role => "search" do %>
+      <%= content_tag :div, :class => "form-group" do %>
+        <%= search_field_tag "q", nil, :class => "form-control", :placeholder => "Search inventory ..." %>
+      <% end %>
+      <%= submit_tag "Search", :class => "btn btn-default" %>
+    <% end %>
+  <% end %>
+<% end %>
